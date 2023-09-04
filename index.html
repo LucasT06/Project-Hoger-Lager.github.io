@@ -10,19 +10,31 @@
     <title>Document</title>
 
 </head>
-<body>
-    <img src="star2.jpg" alt="">
-
-    <div class="game">
-        <div class="container">
-            <!-- Dice 1 HTML here -->
+<div class="game">
+    <div class="container">
+        <div id="dice1" class="dice dice-one">
+            <div class="side one">
+                <div class="dot one-1"></div>
+            </div>
+            <div class="side two">
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+            </div>
+            <!-- Include content for the remaining sides of Dice 1 similarly -->
         </div>
-        <div class="container">
-            <!-- Dice 2 HTML here -->
-        </div>
-        <div id='roll' class='roll-button'><button>Roll dice!</button></div>
     </div>
-
-    <script src="main.js"></script>
-</body>
+    <div class="container">
+        <div id="dice2" class="dice dice-two">
+            <div class="side one">
+                <div class="dot one-1"></div>
+            </div>
+            <div class="side two">
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+            </div>
+            <!-- Include content for the remaining sides of Dice 2 similarly -->
+        </div>
+    </div>
+    <div id="roll" class="roll-button"><button>Roll dice!</button></div>
+</div>
 </html>
