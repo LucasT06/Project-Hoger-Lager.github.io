@@ -1,40 +1,79 @@
 <!DOCTYPE html>
-<script src="main.js"></script>
 <html lang="en">
-
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Dobbelsteen</title>
+    <style>
+        /* Voeg hier je CSS-styling toe voor de dobbelstenen */
+        .dice {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 10px;
+        }
 
+        .show-1::before {
+            content: '⚀';
+            font-size: 36px;
+        }
+
+        .show-2::before {
+            content: '⚁';
+            font-size: 36px;
+        }
+
+        .show-3::before {
+            content: '⚂';
+            font-size: 36px;
+        }
+
+        .show-4::before {
+            content: '⚃';
+            font-size: 36px;
+        }
+
+        .show-5::before {
+            content: '⚄';
+            font-size: 36px;
+        }
+
+        .show-6::before {
+            content: '⚅';
+            font-size: 36px;
+        }
+    </style>
 </head>
-<div class="game">
-    <div class="container">
-        <div id="dice1" class="dice dice-one">
-            <div class="side one">
-                <div class="dot one-1"></div>
-            </div>
-            <div class="side two">
-                <div class="dot two-1"></div>
-                <div class="dot two-2"></div>
-            </div>
-            <!-- Include content for the remaining sides of Dice 1 similarly -->
-        </div>
-    </div>
-    <div class="container">
-        <div id="dice2" class="dice dice-two">
-            <div class="side one">
-                <div class="dot one-1"></div>
-            </div>
-            <div class="side two">
-                <div class="dot two-1"></div>
-                <div class="dot two-2"></div>
-            </div>
-            <!-- Include content for the remaining sides of Dice 2 similarly -->
-        </div>
-    </div>
-    <div id="roll" class="roll-button"><button>Roll dice!</button></div>
-</div>
+<body>
+    <div class="dice" id="dice1"></div>
+    <div class="dice" id="dice2"></div>
+    <button id="roll">Roll</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("index.html werkt");
+            let elDiceOne = document.getElementById('dice1');
+            let elDiceTwo = document.getElementById('dice2');
+            let elComeOut = document.getElementById('roll');
+
+            elComeOut.onclick = function () {
+                rollDice();
+            };
+
+            function rollDice() {
+                let diceOne = Math.floor((Math.random() * 6) + 1);
+                let diceTwo = Math.floor((Math.random() * 6) + 1);
+
+                console.log(diceOne + ' ' + diceTwo);
+
+                elDiceOne.className = 'dice show-' + diceOne;
+                elDiceTwo.className = 'dice show-' + diceTwo;
+            }
+        });
+    </script>
+</body>
 </html>
+
