@@ -9,41 +9,38 @@
     <style>
         /* Voeg hier je CSS-styling toe voor de dobbelstenen */
         .dice {
-            width: 100px;
-            height: 100px;
-            border: 1px solid black;
+            width: 300px; /* Aangepaste breedte */
+            height: 700px; /* Aangepaste hoogte */
+            border: 0px solid rgb(0, 0, 0);
             display: inline-block;
             margin: 10px;
+            font-size: 48px; /* Aangepaste lettergrootte voor de punten */
+            line-height: 150px; /* Zorgt voor verticale uitlijning van de punten */
+            text-align: center; /* Centreert de punten binnen de dobbelsteen */
         }
 
         .show-1::before {
             content: '⚀';
-            font-size: 36px;
         }
 
         .show-2::before {
             content: '⚁';
-            font-size: 36px;
         }
 
         .show-3::before {
             content: '⚂';
-            font-size: 36px;
         }
 
         .show-4::before {
             content: '⚃';
-            font-size: 36px;
         }
 
         .show-5::before {
             content: '⚄';
-            font-size: 36px;
         }
 
         .show-6::before {
             content: '⚅';
-            font-size: 36px;
         }
     </style>
 </head>
@@ -76,4 +73,3 @@
     </script>
 </body>
 </html>
-
