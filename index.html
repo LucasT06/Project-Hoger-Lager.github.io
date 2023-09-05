@@ -7,6 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dobbelsteen</title>
     <style>
+        /* Algemene stijl voor het hele document */
+        body {
+            background-image: url('fotos/bg.png');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: bisque;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
         /* Voeg hier je CSS-styling toe voor de dobbelstenen */
         .dice {
             width: 300px; /* Aangepaste breedte */
@@ -42,21 +57,49 @@
         .show-6::before {
             content: '⚅';
         }
+
+        /* Stijl voor de knoppen */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
     <div class="dice" id="dice1"></div>
     <div class="dice" id="dice2"></div>
-    <button id="roll">Roll</button>
+    <div class="button-container">
+        <button id="higher">Hoger</button>
+        <button id="roll">Roll</button>
+        <button id="lower">Lager</button>
+    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             console.log("index.html werkt");
             let elDiceOne = document.getElementById('dice1');
             let elDiceTwo = document.getElementById('dice2');
-            let elComeOut = document.getElementById('roll');
+            let elHigher = document.getElementById('higher');
+            let elLower = document.getElementById('lower');
+            let elRoll = document.getElementById('roll');
 
-            elComeOut.onclick = function () {
+            elHigher.onclick = function () {
+                // Voeg hier de logica toe voor "Hoger" knop
+            };
+
+            elLower.onclick = function () {
+                // Voeg hier de logica toe voor "Lager" knop
+            };
+
+            elRoll.onclick = function () {
                 rollDice();
             };
 
