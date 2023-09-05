@@ -1,6 +1,8 @@
 /* Algemene stijl voor het hele document */
 body {
-    background-image: url('fotos/hoger\ lager\ background.png');
+    background-image: url('fotos/bg.png');
+    background-position: center;
+    background-size: cover;
     color: bisque;
     display: flex;
     justify-content: center;
@@ -27,4 +29,38 @@ h1 {
     position: relative;
     display: inline-block;
     top: 200px;
+}
+
+
+
+
+
+/* Stijl voor de dobbelstenencontainer */
+.dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* Hiermee wordt de helft van de verticale hoogte van het scherm ingenomen */
+}
+
+/* Stijl voor de dobbelstenen */
+.dice {
+    /* Bestaande stijlregels voor de dobbelstenen blijven hetzelfde */
+    width: 300px;
+    height: 700px;
+    /* Andere stijlregels blijven hetzelfde */
+}
+
+/* Stijl voor de knopcontainer */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* Hiermee wordt de andere helft van de verticale hoogte van het scherm ingenomen */
+}
+
+/* Stijl voor de knop "Roll" */
+#roll {
+    /* Andere stijlregels blijven hetzelfde */
+    margin-top: 10px; /* Voegt wat ruimte toe boven de knop om deze te scheiden van de dobbelstenen */
 }
