@@ -1,9 +1,8 @@
 /* Algemene stijl voor het hele document */
 body {
-    background-image: url('fotos/bg.png');
+    background-image: url('fotos/hoger\ lager\ bg.png');
     background-position: center;
     background-size: cover;
-    color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
