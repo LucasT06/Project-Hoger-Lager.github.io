@@ -40,28 +40,46 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%; /* Hiermee wordt de helft van de verticale hoogte van het scherm ingenomen */
-    .dice {
-        width: 300px; /* Aangepaste breedte */
-        height: 300px; /* Aangepaste hoogte */
-        border: 0px solid rgb(0, 0, 0);
-        margin: 10px;
-        font-size: 48px; /* Aangepaste lettergrootte voor de punten */
-        text-align: center; /* Centreert de punten binnen de dobbelsteen */
-        display: flex;
-        flex-direction: column; /* Plaatst de punten verticaal binnen de dobbelsteen */
-        justify-content: center; /* Centreert de punten horizontaal */
-        align-items: center; /* Centreert de punten verticaal */
-    }
+    height: 50%; 
+.dice {
+    width: 300px; /* Aangepaste breedte */
+    height: 700px; /* Aangepaste hoogte */
+    border: 0px solid rgb(0, 0, 0);
+    display: inline-block;
+    margin: 10px;
+    font-size: 48px; /* Aangepaste lettergrootte voor de punten */
+    line-height: 150px; /* Zorgt voor verticale uitlijning van de punten */
+    text-align: center; /* Centreert de punten binnen de dobbelsteen */
 }
 
-/* Stijl voor de dobbelstenen */
-.dice {
-    /* Bestaande stijlregels voor de dobbelstenen blijven hetzelfde */
-    width: 300px;
-    height: 700px;
-    /* Andere stijlregels blijven hetzelfde */
+.show-1::before {
+    content: url('/fotos/1.png');
 }
+
+.show-2::before {
+    content: url('/fotos/2.png');
+}
+
+.show-3::before {
+    content: url('/fotos/3.png');       
+}
+
+.show-4::before {
+    content: url('/fotos/4.png');       
+}
+
+.show-5::before {
+    content: url('/fotos/5.png');       
+}
+
+.show-6::before {
+    content: url('/fotos/6.png');       
+}
+}
+
+
+
+
 
 /* Stijl voor de knopcontainer */
 .button-container {
@@ -71,16 +89,28 @@ h1 {
     height: 50%; /* Hiermee wordt de andere helft van de verticale hoogte van het scherm ingenomen */
 }
 
-.dice-container {
-    display: flex;
-}
 
 /* Stijl voor de knop "Roll" */
 #roll {
-    /* Andere stijlregels blijven hetzelfde */
-    margin-top: 10px; /* Voegt wat ruimte toe boven de knop om deze te scheiden van de dobbelstenen */
+    justify-content: left;
+    margin-top: 700px;
+    align-items: center;
 }
-/* Voeg deze stijlen toe aan je bestaande CSS of in een apart CSS-bestand */
+
+#higher {
+    justify-content: left;
+    margin-top: 700px;
+    align-items: center;
+}
+
+#lower {
+    justify-content: left;
+    margin-top: 700px;
+    align-items: center;
+    
+}
+
+
 
 /* Stijl voor de pop-up container */
 .popup {
