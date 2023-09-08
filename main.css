@@ -41,6 +41,18 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 50%; /* Hiermee wordt de helft van de verticale hoogte van het scherm ingenomen */
+    .dice {
+        width: 300px; /* Aangepaste breedte */
+        height: 300px; /* Aangepaste hoogte */
+        border: 0px solid rgb(0, 0, 0);
+        margin: 10px;
+        font-size: 48px; /* Aangepaste lettergrootte voor de punten */
+        text-align: center; /* Centreert de punten binnen de dobbelsteen */
+        display: flex;
+        flex-direction: column; /* Plaatst de punten verticaal binnen de dobbelsteen */
+        justify-content: center; /* Centreert de punten horizontaal */
+        align-items: center; /* Centreert de punten verticaal */
+    }
 }
 
 /* Stijl voor de dobbelstenen */
@@ -59,8 +71,46 @@ h1 {
     height: 50%; /* Hiermee wordt de andere helft van de verticale hoogte van het scherm ingenomen */
 }
 
+.dice-container {
+    display: flex;
+}
+
 /* Stijl voor de knop "Roll" */
 #roll {
     /* Andere stijlregels blijven hetzelfde */
     margin-top: 10px; /* Voegt wat ruimte toe boven de knop om deze te scheiden van de dobbelstenen */
+}
+/* Voeg deze stijlen toe aan je bestaande CSS of in een apart CSS-bestand */
+
+/* Stijl voor de pop-up container */
+.popup {
+    display: none; /* Verberg de pop-up standaard */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Achtergrondkleur met een beetje transparantie */
+    z-index: 1; /* Zorg ervoor dat de pop-up bovenop andere elementen staat */
+}
+
+/* Stijl voor de pop-up inhoud */
+.popup-content {
+    background-color: #000000;
+    color: #ffffff; /* Wijzig de tekstkleur naar wit */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stijl voor de knop om de pop-up te sluiten */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
