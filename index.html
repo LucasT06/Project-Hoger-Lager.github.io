@@ -1,127 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="main.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dobbelsteen</title>
-    <style>
-        /* Algemene stijl voor het hele document */
-        body {
-            background-image: url('fotos/bg.png');
-            background-position: center center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            color: bisque;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        /* Voeg hier je CSS-styling toe voor de dobbelstenen */
-        .dice {
-            width: 300px; /* Aangepaste breedte */
-            height: 700px; /* Aangepaste hoogte */
-            border: 0px solid rgb(0, 0, 0);
-            display: inline-block;
-            margin: 10px;
-            font-size: 48px; /* Aangepaste lettergrootte voor de punten */
-            line-height: 150px; /* Zorgt voor verticale uitlijning van de punten */
-            text-align: center; /* Centreert de punten binnen de dobbelsteen */
-        }
-
-        .show-1::before {
-    content: url('/fotos/1.png');
-        }
-
-        .show-2::before {
-            content: url('/fotos/2.png');
-        }
-
-        .show-3::before {
-            content: url('/fotos/3.png');       
-        }
-
-        .show-4::before {
-            content: url('/fotos/4.png');       
-        }
-
-        .show-5::before {
-            content: url('/fotos/5.png');       
-        }
-
-        .show-6::before {
-            content: url('/fotos/6.png');       
-        }
-
-        /* Stijl voor de knoppen */
-        .button-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        button {
-            margin: 0 10px;
-            padding: 10px 20px;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css">
 </head>
-<body> <h1>Computer vs Jij</h1>
+<body>
+    <h1>Computer vs Jij</h1>
     <div class="dice-container">
-    <div class="dice" id="dice1"></div>
-    <div class="dice" id="dice2"></div>
-</div>
+        <div class="dice" id="dice1"></div>
+        <div class="dice" id="dice2"></div>
+    </div>
     <div class="button-container">
         <button id="higher">Hoger</button>
         <button id="roll">Roll</button>
         <button id="lower">Lager</button>
     </div>
-    <h3>Computer  credits: 3   <br> Jij  Credits: 3 </h3>
+    <h3>Computer credits: 3 <br> Jij Credits: 3 </h3>
 
-   
-</body>
-
-<script>
-            document.addEventListener("DOMContentLoaded", function () {
-            console.log("index.html werkt");
-            let elDiceOne = document.getElementById('dice1');
-            let elDiceTwo = document.getElementById('dice2');
-            let elHigher = document.getElementById('higher');
-            let elLower = document.getElementById('lower');
-            let elRoll = document.getElementById('roll');
-
-            elHigher.onclick = function () {
-                // Voeg hier de logica toe voor "Hoger" knop
-            };
-
-            elLower.onclick = function () {
-                // Voeg hier de logica toe voor "Lager" knop
-            };
-
-            elRoll.onclick = function () {
-                rollDice();
-            };
-
-            function rollDice() {
-                let diceOne = Math.floor((Math.random() * 6) + 1);
-                let diceTwo = Math.floor((Math.random() * 6) + 1);
-
-                console.log(diceOne + ' ' + diceTwo);
-
-                elDiceOne.className = 'dice show-' + diceOne;
-                elDiceTwo.className = 'dice show-' + diceTwo;
-            }
-        });
-</script>
-
-<body>
     <!-- Wijzig de tekst binnen de knop naar "Spelregels" -->
     <button id="showPopup">Spelregels</button>
 
@@ -132,36 +29,17 @@
             <h2>Spelregels hoger Lager</h2>
             <p>DE REGELS VAN HET SPEL GAAN ALS VOLGT: <br>
                 <br>
- 
                 DRUK OP DE KNOP “ROLL”<br>
-                
                 EN LAAT DE COMPUTER DE DOBBELSTENEN GOOIEN<br>
-                
                 GOK OF JIJ HOGER OF LAGER GAAT GOOIEN<br>
-                
                 ZET EVENTUEEL WAT GELD IN EN GOOI DOOR NOGMAALS OP “ROLL” TE KLIKKEN
                 <br>
                 IEDERE SPELER HEEFT 3 LEVENS<br>
-                
                 ALS AL JE LEVENS OP ZIJN, IS HET GAME OVER<br>
-                
                 EN BEGINT HET SPEL OPNIEUW! ^^.</p>
         </div>
     </div>
 
-    <script>
-        // JavaScript om de pop-up te openen en te sluiten (blijft hetzelfde)
-        const showPopupButton = document.getElementById('showPopup');
-        const popup = document.getElementById('popup');
-        const closePopupButton = document.getElementById('closePopup');
-
-        showPopupButton.addEventListener('click', () => {
-            popup.style.display = 'block';
-        });
-
-        closePopupButton.addEventListener('click', () => {
-            popup.style.display = 'none';
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
