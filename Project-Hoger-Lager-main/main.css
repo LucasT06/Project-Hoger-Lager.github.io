@@ -1,6 +1,8 @@
 /* Algemene stijl voor het hele document */
 body {
     background-image: url('fotos/bg.png');
+    background-position: center;
+    background-size: cover;
     color: bisque;
     display: flex;
     justify-content: center;
@@ -27,4 +29,123 @@ h1 {
     position: relative;
     display: inline-block;
     top: 200px;
+}
+
+
+
+
+
+/* Stijl voor de dobbelstenencontainer */
+.dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; 
+.dice {
+    width: 300px; /* Aangepaste breedte */
+    height: 700px; /* Aangepaste hoogte */
+    border: 0px solid rgb(0, 0, 0);
+    display: inline-block;
+    margin: 10px;
+    font-size: 48px; /* Aangepaste lettergrootte voor de punten */
+    line-height: 150px; /* Zorgt voor verticale uitlijning van de punten */
+    text-align: center; /* Centreert de punten binnen de dobbelsteen */
+}
+
+.show-1::before {
+    content: url('/fotos/1.png');
+}
+
+.show-2::before {
+    content: url('/fotos/2.png');
+}
+
+.show-3::before {
+    content: url('/fotos/3.png');       
+}
+
+.show-4::before {
+    content: url('/fotos/4.png');       
+}
+
+.show-5::before {
+    content: url('/fotos/5.png');       
+}
+
+.show-6::before {
+    content: url('/fotos/6.png');       
+}
+}
+
+
+
+
+
+/* Stijl voor de knopcontainer */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* Hiermee wordt de andere helft van de verticale hoogte van het scherm ingenomen */
+}
+
+
+/* Stijl voor de knop "Roll" */
+#roll {
+    justify-content: left;
+    margin-top: 700px;
+    align-items: center;
+}
+
+#higher {
+    justify-content: left;
+    margin-top: 700px;
+    align-items: center;
+}
+
+#lower {
+    justify-content: left;
+    margin-top: 700px;
+    align-items: center;
+    
+}
+
+
+
+/* Stijl voor de pop-up container */
+.popup {
+    display: none; /* Verberg de pop-up standaard */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Achtergrondkleur met een beetje transparantie */
+    z-index: 1; /* Zorg ervoor dat de pop-up bovenop andere elementen staat */
+}
+
+/* Stijl voor de pop-up inhoud */
+.popup-content {
+    background-color: #000000;
+    color: #ffffff; /* Wijzig de tekstkleur naar wit */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stijl voor de knop om de pop-up te sluiten */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.roll {
+    font-size: 30px;
+    text-align: center;
 }
