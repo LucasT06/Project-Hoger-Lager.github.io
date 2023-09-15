@@ -8,17 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let elLower = document.getElementById('lower');
     let elRoll = document.getElementById('roll');
 
-    elHigher.onclick = function () {
-        // Voeg hier de logica toe voor "Hoger" knop
-    };
+    elHigher.addEventListener('click',  function () {
+    
+    });
 
-    elLower.onclick = function () {
-        // Voeg hier de logica toe voor "Lager" knop
-    };
+    elLower.addEventListener('click',  function () {
+    
+    });
 
-    elRoll.onclick = function () {
+    elRoll.addEventListener('click',  function () {
         rollDice();
-    };
+    });
+        
+    
 
     function rollDice() {
         let diceOne = Math.floor((Math.random() * 6) + 1);

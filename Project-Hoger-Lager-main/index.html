@@ -6,49 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dobbelsteen</title>
-    <style>
-        /* Voeg hier je CSS-styling toe voor de dobbelstenen */
-        .dice {
-            width: 300px; /* Aangepaste breedte */
-            height: 700px; /* Aangepaste hoogte */
-            border: 0px solid rgb(0, 0, 0);
-            display: inline-block;
-            margin: 10px;
-            font-size: 48px; /* Aangepaste lettergrootte voor de punten */
-            line-height: 150px; /* Zorgt voor verticale uitlijning van de punten */
-            text-align: center; /* Centreert de punten binnen de dobbelsteen */
-        }
-
-        .show-1::before {
-            content: '⚀';
-        }
-
-        .show-2::before {
-            content: '⚁';
-        }
-
-        .show-3::before {
-            content: '⚂';
-        }
-
-        .show-4::before {
-            content: '⚃';
-        }
-
-        .show-5::before {
-            content: '⚄';
-        }
-
-        .show-6::before {
-            content: '⚅';
-        }
-    </style>
+    
 </head>
 <body>
     <div class="dice" id="dice1"></div>
     <div class="dice" id="dice2"></div>
-    <button class="roll" id="roll">Roll</button>
     <button class="lager" id="lager">lager</button>
+    <button class="roll" id="roll">Roll</button>
     <button class="hoger" id="hoger">hoger</button>
 
     <script>
