@@ -1,6 +1,6 @@
 /* Algemene stijl voor het hele document */
 body {
-    background-image: url('fotos/bg.png');
+    background-image: url('fotos/ae47d53a-535e-4f51-b847-38c5de0574a4.jpg');
     background-position: center;
     background-size: cover;
     color: bisque;
@@ -17,30 +17,8 @@ h1 {
     font-size: xx-large;
 }
 
-/* Stijl voor elementen met de class "game" */
-.game {
-    position: relative;
-    width: auto;
-    height: 100%;
-}
-
-/* Stijl voor elementen met de class "container" */
-.container {
-    position: relative;
-    display: inline-block;
-    top: 200px;
-}
-
-
-
-
 
 /* Stijl voor de dobbelstenencontainer */
-.dice-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%; 
 .dice {
     width: 300px; /* Aangepaste breedte */
     height: 700px; /* Aangepaste hoogte */
@@ -75,40 +53,9 @@ h1 {
 .show-6::before {
     content: url('/fotos/6.png');       
 }
-}
 
 
 
-
-
-/* Stijl voor de knopcontainer */
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%; /* Hiermee wordt de andere helft van de verticale hoogte van het scherm ingenomen */
-}
-
-
-/* Stijl voor de knop "Roll" */
-#roll {
-    justify-content: left;
-    margin-top: 700px;
-    align-items: center;
-}
-
-#higher {
-    justify-content: left;
-    margin-top: 700px;
-    align-items: center;
-}
-
-#lower {
-    justify-content: left;
-    margin-top: 700px;
-    align-items: center;
-    
-}
 
 
 
@@ -134,13 +81,4 @@ h1 {
     transform: translate(-50%, -50%);
     padding: 20px;
     text-align: center;
-}
-
-/* Stijl voor de knop om de pop-up te sluiten */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
 }
