@@ -10,17 +10,6 @@ body {
     height: 100vh;
 }
 
-.dice {
-    width: 300px; /* Aangepaste breedte */
-    height: 700px; /* Aangepaste hoogte */
-    border: 0px solid rgb(0, 0, 0);
-    display: inline-block;
-    margin: 10px;
-    font-size: 48px; /* Aangepaste lettergrootte voor de punten */
-    line-height: 150px; /* Zorgt voor verticale uitlijning van de punten */
-    text-align: center; /* Cent */
-   }
-
 /* Stijl voor alle h1-elementen */
 h1 {
     text-align: center;
@@ -28,20 +17,6 @@ h1 {
     font-size: xx-large;
 }
 
-/* Stijl voor elementen met de class "container" */
-.container {
-    position: relative;
-    display: inline-block;
-    top: 200px;
-}
-
-/* Stijl voor de dobbelstenencontainer */
-.dice-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%; 
-}
 .dice {
     width: 300px; /* Aangepaste breedte */
     height: 700px; /* Aangepaste hoogte */
@@ -75,24 +50,4 @@ h1 {
 
 .show-6::before {
     content: url('/fotos/6.png');       
-}
-
-/* Stijl voor de knop "Roll" */
-#roll {
-    justify-content: left;
-    margin-top: 700px;
-    align-items: center;
-}
-
-#higher {
-    justify-content: left;
-    margin-top: 700px;
-    align-items: center;
-}
-
-#lower {
-    justify-content: left;
-    margin-top: 700px;
-    align-items: center;
-    
 }
