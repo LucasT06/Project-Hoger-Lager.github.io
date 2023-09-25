@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("index.html werkt");
-
+;
     
     let elDiceOne = document.getElementById('dice1');
     let elDiceTwo = document.getElementById('dice2');
@@ -43,4 +43,4 @@ document.addEventListener("DOMContentLoaded", function () {
         popup.style.display = 'none';
     });
 });
-
+;
