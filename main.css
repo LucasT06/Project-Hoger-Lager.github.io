@@ -64,15 +64,15 @@ h1 {
 }
 
 .comp {
-    transform: translate(60%, -950%);
+    transform: translate(110%, -950%);
 }
 .vs {
-    transform: translate(380%, -950%);
+    transform: translate(590%, -950%);
     
 }
 
 .jij {
-    transform: translate(720%, -950%);
+    transform: translate(230%, -950%);
 }
 
 .button {
@@ -80,5 +80,42 @@ transform: translate(-400%, 100%);
 }
 
 #showPopup {
-    transform: translate(700%, 2000%);
+    transform: translate(660%, 320%);
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: black;
+    color: white;
+    
+}
+
+#higher {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: black;
+    color: white;
+    transform: translate(520%, -150%);
+}
+
+#roll {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: black;
+    color: white;
+    transform: translate(572%, -100%);
+}
+
+#lower {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: black;
+    color: white;
+    transform: translate(610%, -150%);
 }
