@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("index.html werkt");
 ;
-    
+    let person = prompt("Please enter your name",)
+    const jij = document.querySelector('.jij')
+    jij.textContent= person
+
     let elDiceOne = document.getElementById('dice1');
     let elDiceTwo = document.getElementById('dice2');
     let elHigher = document.getElementById('higher');
