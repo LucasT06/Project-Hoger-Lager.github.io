@@ -1,21 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("index.html werkt");
-<<<<<<< Updated upstream
-;
-    let person = prompt("Please enter your name",)
-    const jij = document.querySelector('.jij')
-    jij.textContent= person
 
-=======
-    
->>>>>>> Stashed changes
+   
+
     let elDiceOne = document.getElementById('dice1');
     let elDiceTwo = document.getElementById('dice2');
     let elHigher = document.getElementById('higher');
     let elLower = document.getElementById('lower');
     let elRoll = document.getElementById('roll');
 
-    let jij = 
+    
 
     elHigher.onclick = function () {
         // Voeg hier de logica toe voor "Hoger" knop
