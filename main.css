@@ -78,3 +78,7 @@ h1 {
 .button {
 transform: translate(-400%, 100%);
 }
+
+#showPopup {
+    transform: translate(700%, 2000%);
+}
