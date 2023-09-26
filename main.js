@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         elDiceTwo.className = 'dice show-' + diceTwo;
     }
 
+
     // JavaScript om de pop-up te openen en te sluiten (blijft hetzelfde)
     const showPopupButton = document.getElementById('showPopup');
     const popup = document.getElementById('popup');
