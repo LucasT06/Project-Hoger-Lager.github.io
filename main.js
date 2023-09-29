@@ -8,9 +8,7 @@
     const Higher = document.querySelector('.higher');
     const Lower = document.querySelector('.lower');
     const roll = document.querySelector('.roll');
-
-
-    
+    const test = document.querySelector('.test')
 
 
     roll.addEventListener ('click', function(){
@@ -19,35 +17,42 @@
         
         console.log(diceOne + ' ' + diceTwo);
 
+        let result1 = diceOne + diceTwo;
+
         dice1.src = "./img/dice-" + diceOne + ".png";
         dice2.src = "./img/dice-" + diceTwo + ".png";
         
     });
 
 
-
-
-   Higher.addEventListener('click', function(){
+    Higher.addEventListener('click', function(){
         let dicetre = Math.floor((Math.random() * 6) + 1);
         let dicefore = Math.floor((Math.random() * 6) + 1);
 
         console.log(dicetre + ' ' + dicefore);
 
-        dice1.src = "./img/dice-" + dicetre + ".png";
-        dice2.src = "./img/dice-" + dicefore + ".png";
+        let result2 = dicetre + dicefore;
+
+        dice3.src = "./img/dice-" + dicetre + ".png";
+        dice4.src = "./img/dice-" + dicefore + ".png";
+
+        if (result1 < result2){
+            console.log("win")
+        }
+        
 
     });
 
-    Lower.onclick = function () {
+    Lower.addEventListener("click", function(){
         let dicetre = Math.floor((Math.random() * 6) + 1);
         let dicefore = Math.floor((Math.random() * 6) + 1);
-    };
 
-    
-    
-    
-    
-    
+        console.log(dicetre + ' ' + dicefore);
+
+        dice3.src = "./img/dice-" + dicetre + ".png";
+        dice4.src = "./img/dice-" + dicefore + ".png";
+    });
+
     const showPopupButton = document.querySelector('.showPopup');
     const popup = document.querySelector('.popup');
     const closePopupButton = document.querySelector('.close');

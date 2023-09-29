@@ -18,11 +18,6 @@ h1 {
 }
 
 
-/* Stijl voor de dobbelstenencontainer */
-.dice1 {
-    transform: translate(100%, 100%);
-}
-
 /* Stijl voor de pop-up inhoud */
 .popup-content {
     background-color: #000000;
@@ -92,14 +87,7 @@ transform: translate(-370%, 100%);
 
     transform: translate(1000%, -100%);
 }
-.dice1-container{
-transform: translate(-10%, -25%);
-}
-.dice2-container{
-    transform: translate(-200%, -25%);
 
-    transform: translate(610%, -150%);
-}
 
 .close {
     font-size: large;
