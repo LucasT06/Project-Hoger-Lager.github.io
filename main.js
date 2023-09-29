@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("index.html werkt");
 
-   
-
     let elDiceOne = document.getElementById('dice1');
     let elDiceTwo = document.getElementById('dice2');
     let elDicetre = document.getElementById('dice3');
@@ -11,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let elLower = document.getElementById('lower');
     let elRoll = document.getElementById('roll');
 
-    
 
     elHigher.onclick = function () {
         let dicetre = Math.floor((Math.random() * 6) + 1);
