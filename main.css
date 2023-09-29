@@ -1,6 +1,6 @@
 /* Algemene stijl voor het hele document */
 body {
-    background-image: url('fotos/ae47d53a-535e-4f51-b847-38c5de0574a4.jpg');
+    background-image: url('img/ae47d53a-535e-4f51-b847-38c5de0574a4.jpg');
     background-position: center;
     background-size: cover;
     color: bisque;
@@ -22,33 +22,6 @@ h1 {
 .dice1 {
     transform: translate(100%, 100%);
 }
-
-
-
-.show-1::before {
-    content: url('/fotos/1.png');
-}
-
-.show-2::before {
-    content: url('/fotos/2.png');
-}
-
-.show-3::before {
-    content: url('/fotos/3.png');       
-}
-
-.show-4::before {
-    content: url('/fotos/4.png');       
-}
-
-.show-5::before {
-    content: url('/fotos/5.png');       
-}
-
-.show-6::before {
-    content: url('/fotos/6.png');       
-}
-
 
 /* Stijl voor de pop-up inhoud */
 .popup-content {
@@ -116,7 +89,7 @@ transform: translate(-370%, 100%);
     border-color: red;
     background-color: black;
     color: white;
-<<<<<<< Updated upstream
+
     transform: translate(1000%, -100%);
 }
 .dice1-container{
@@ -124,11 +97,10 @@ transform: translate(-10%, -25%);
 }
 .dice2-container{
     transform: translate(-200%, -25%);
-=======
+
     transform: translate(610%, -150%);
 }
 
 .close {
     font-size: large;
->>>>>>> Stashed changes
 }
