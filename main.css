@@ -19,12 +19,11 @@ h1 {
 
 
 /* Stijl voor de dobbelstenencontainer */
-.dice {
-    width: 300px; /* Aangepaste breedte */
-    display: inline-block;
-    text-align: center; /* Centreert de punten binnen de dobbelsteen */
-    transform: translate(-40% , -150%);
+.dice1 {
+    transform: translate(100%, 100%);
 }
+
+
 
 .show-1::before {
     content: url('/fotos/1.png');

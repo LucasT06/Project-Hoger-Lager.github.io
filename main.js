@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let elDiceOne = document.getElementById('dice1');
     let elDiceTwo = document.getElementById('dice2');
+    let elDicetre = document.getElementById('dice3');
+    let elDicefore = document.getElementById('dice4');
     let elHigher = document.getElementById('higher');
     let elLower = document.getElementById('lower');
     let elRoll = document.getElementById('roll');
@@ -12,11 +14,18 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
     elHigher.onclick = function () {
-        // Voeg hier de logica toe voor "Hoger" knop
+        let dicetre = Math.floor((Math.random() * 6) + 1);
+        let dicefore = Math.floor((Math.random() * 6) + 1);
+
+        console.log(dicetre + ' ' + dicefore);
+
+        elDicetre.className = 'dice show-' + dicetre;
+        elDicefore.className = 'dice show-' + dicefore;
     };
 
     elLower.onclick = function () {
-        // Voeg hier de logica toe voor "Lager" knop
+        let dicetre = Math.floor((Math.random() * 6) + 1);
+        let dicefore = Math.floor((Math.random() * 6) + 1);
     };
 
     elRoll.onclick = function () {
