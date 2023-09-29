@@ -23,7 +23,7 @@ h1 {
     width: 300px; /* Aangepaste breedte */
     display: inline-block;
     text-align: center; /* Centreert de punten binnen de dobbelsteen */
-    transform: translate(-70% , -150%);
+    transform: translate(-40% , -150%);
 }
 
 .show-1::before {
@@ -67,16 +67,16 @@ h1 {
     transform: translate(110%, -950%);
 }
 .vs {
-    transform: translate(590%, -950%);
+    transform: translate(600%, -950%);
     
 }
 
 .jij {
-    transform: translate(230%, -950%);
+    transform: translate(930%, -950%);
 }
 
 .button {
-transform: translate(-400%, 100%);
+transform: translate(-370%, 100%);
 }
 
 #showPopup {
