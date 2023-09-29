@@ -1,27 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("index.html werkt");
-<<<<<<< HEAD
-;
-    // let person = prompt("Please enter your name",)
-    // const jij = document.querySelector('.jij')
-    // jij.textContent= person
 
-=======
-
-   
-
->>>>>>> 57a86b556b4ab2bafc85fc7871363fdda54c2f16
     let elDiceOne = document.getElementById('dice1');
     let elDiceTwo = document.getElementById('dice2');
     let elHigher = document.getElementById('higher');
     let elLower = document.getElementById('lower');
     let elRoll = document.getElementById('roll');
 
-<<<<<<< HEAD
-=======
-    
 
->>>>>>> 57a86b556b4ab2bafc85fc7871363fdda54c2f16
     elHigher.onclick = function () {
         // Voeg hier de logica toe voor "Hoger" knop
     };
