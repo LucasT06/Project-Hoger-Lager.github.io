@@ -79,7 +79,7 @@ transform: translate(-370%, 100%);
 }
 
 #showPopup {
-    transform: translate(660%, 320%);
+    transform: translate(270%, 320%);
     width: 100px;
     height: 100px;
     border-radius: 20px;
@@ -96,7 +96,7 @@ transform: translate(-370%, 100%);
     border-color: red;
     background-color: black;
     color: white;
-    transform: translate(520%, -150%);
+    transform: translate(900%, -100%);
 }
 
 #roll {
@@ -106,7 +106,7 @@ transform: translate(-370%, 100%);
     border-color: red;
     background-color: black;
     color: white;
-    transform: translate(572%, -100%);
+    transform: translate(950%, -50%);
 }
 
 #lower {
@@ -116,5 +116,11 @@ transform: translate(-370%, 100%);
     border-color: red;
     background-color: black;
     color: white;
-    transform: translate(610%, -150%);
+    transform: translate(1000%, -100%);
+}
+.dice1-container{
+transform: translate(-10%, -25%);
+}
+.dice2-container{
+    transform: translate(-200%, -25%);
 }
