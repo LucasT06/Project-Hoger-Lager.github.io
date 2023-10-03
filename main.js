@@ -5,9 +5,9 @@ const dice1 = document.querySelector('.dice1-img')
 const dice2 = document.querySelector('.dice2-img')
 const dice3 = document.querySelector('.dice3-img')
 const dice4 = document.querySelector('.dice4-img')
-const higherBtn = document.querySelector('.higher');
-const lowerBtn = document.querySelector('.lower');
-const roll = document.querySelector('.roll');
+const higherBtn = document.querySelector('.higher').disabled = true;
+const lowerBtn = document.querySelector('.lower').disabled = true;
+const roll = document.querySelector('.roll').disabled = false;
 const test = document.querySelector('.test')
 
 let diceOne;
@@ -33,8 +33,7 @@ higherBtn.addEventListener('click', function () {
     }
     else if (diceOne + diceTwo > dicetre + dicefore) {
         console.log("lose")
-    }
-
+    } 
 });
 
 lowerBtn.addEventListener("click", function () {
