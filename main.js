@@ -12,12 +12,12 @@
 
 
     roll.addEventListener ('click', function(){
-        let diceOne = Math.floor((Math.random() * 6) + 1);
-        let diceTwo = Math.floor((Math.random() * 6) + 1);
+        const diceOne = Math.floor((Math.random() * 6) + 1);
+        const diceTwo = Math.floor((Math.random() * 6) + 1);
         
         console.log(diceOne + ' ' + diceTwo);
 
-        let result1 = diceOne + diceTwo;
+       
 
         dice1.src = "./img/dice-" + diceOne + ".png";
         dice2.src = "./img/dice-" + diceTwo + ".png";
@@ -26,26 +26,28 @@
 
 
     Higher.addEventListener('click', function(){
-        let dicetre = Math.floor((Math.random() * 6) + 1);
-        let dicefore = Math.floor((Math.random() * 6) + 1);
+        const dicetre = Math.floor((Math.random() * 6) + 1);
+        const dicefore = Math.floor((Math.random() * 6) + 1);
 
         console.log(dicetre + ' ' + dicefore);
 
-        let result2 = dicetre + dicefore;
+        
 
         dice3.src = "./img/dice-" + dicetre + ".png";
         dice4.src = "./img/dice-" + dicefore + ".png";
 
-        if (result1 < result2){
+        if (diceOne + diceTwo < dicetre +  dicefore){
             console.log("win")
         }
-        
+        else if (diceOne + diceTwo > dicetre +  dicefore){
+            console.log("win")
+        }
 
     });
 
     Lower.addEventListener("click", function(){
-        let dicetre = Math.floor((Math.random() * 6) + 1);
-        let dicefore = Math.floor((Math.random() * 6) + 1);
+        const dicetre = Math.floor((Math.random() * 6) + 1);
+        const dicefore = Math.floor((Math.random() * 6) + 1);
 
         console.log(dicetre + ' ' + dicefore);
 
@@ -57,11 +59,11 @@
     const popup = document.querySelector('.popup');
     const closePopupButton = document.querySelector('.close');
 
-    showPopupButton.addEventListener('click', () => {
+    showPopupButton.addEventListener('click', function(){
         popup.style.display = 'block';
     });
 
-    closePopupButton.addEventListener('click', () => {
+    closePopupButton.addEventListener('click', function(){
         popup.style.display = 'none';
     });
 
