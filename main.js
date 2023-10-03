@@ -68,11 +68,6 @@ roll.addEventListener('click', function () {
 
 });
 
-
-
-
-
-
 const showPopupButton = document.querySelector('.showPopup');
 const popup = document.querySelector('.popup');
 const closePopupButton = document.querySelector('.close');

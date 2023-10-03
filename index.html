@@ -9,25 +9,20 @@
 <body>
     
     <button class="showPopup">Spelregels</button>
-    <!-- <h3>Computer credits: 3 <br> Jij Credits: 3 </h3> -->
     
     <h1 class="comp">Computer</h1>
     <p></p><h1 class="vs">vs</h1></p>
     <h1 class="jij">jij</h1>
-    <div class="dice2-container">
+    <div class="dice1-container">
         <div>
             <img class="dice1-img" src="/img/dice-1.png" alt="">
-        </div>
-        <div>
             <img class="dice2-img" src="./img/dice-1.png" alt="">
         </div>
        
     </div>
-    <div class="dice1-container">
+    <div class="dice2-container">
          <div>
             <img class="dice3-img" src="./img/dice-1.png" alt="">
-        </div>
-        <div>
             <img class="dice4-img" src="./img/dice-1.png" alt="">
         </div>
     </div>
@@ -40,16 +35,11 @@
         <button class="lower" id="lower">Lager</button>
     </div>
     <div>
-        <p>
-            <h4>
-                jou punten:0
-                computers punten:0
-            </h4>
-        </p>
+        <div>jou punten:</div><div class="yourpoint">0</div>
+        <div>computers punten:</div><div class="computerpoint">0</div>
+        <div class="winlose"></div>
     </div>
     
-    <!-- Wijzig de tekst binnen de knop naar "Spelregels" -->
-    <!-- Voeg de HTML-structuur voor de pop-up toe (blijft hetzelfde) -->
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close" id="closePopup">&times;</span>

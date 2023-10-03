@@ -92,3 +92,11 @@ transform: translate(-370%, 100%);
 .close {
     font-size: large;
 }
+
+.dice1-container {
+    transform: translate(-80%, -140%);
+}
+
+.dice2-container {
+    transform: translate(100%, -140%);
+}
