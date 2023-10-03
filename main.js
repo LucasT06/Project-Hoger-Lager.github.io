@@ -12,8 +12,8 @@
 
 
     roll.addEventListener ('click', function(){
-        const diceOne = Math.floor((Math.random() * 6) + 1);
-        const diceTwo = Math.floor((Math.random() * 6) + 1);
+        let diceOne = Math.floor((Math.random() * 6) + 1);
+        let diceTwo = Math.floor((Math.random() * 6) + 1);
         
         console.log(diceOne + ' ' + diceTwo);
 
@@ -22,38 +22,48 @@
         dice1.src = "./img/dice-" + diceOne + ".png";
         dice2.src = "./img/dice-" + diceTwo + ".png";
         
-    });
+        Higher.addEventListener('click', function(){
+            let dicetre = Math.floor((Math.random() * 6) + 1);
+            let dicefore = Math.floor((Math.random() * 6) + 1);
+    
+            console.log(dicetre + ' ' + dicefore);
+    
+            
+    
+            dice3.src = "./img/dice-" + dicetre + ".png";
+            dice4.src = "./img/dice-" + dicefore + ".png";
+    
+            if (diceOne + diceTwo < dicetre +  dicefore){
+                console.log("win")
+            }
+            else if (diceOne + diceTwo > dicetre +  dicefore){
+                console.log("lose")
+            }
+    
+        });
 
-
-    Higher.addEventListener('click', function(){
-        const dicetre = Math.floor((Math.random() * 6) + 1);
-        const dicefore = Math.floor((Math.random() * 6) + 1);
-
-        console.log(dicetre + ' ' + dicefore);
-
-        
-
-        dice3.src = "./img/dice-" + dicetre + ".png";
-        dice4.src = "./img/dice-" + dicefore + ".png";
-
-        if (diceOne + diceTwo < dicetre +  dicefore){
-            console.log("win")
-        }
-        else if (diceOne + diceTwo > dicetre +  dicefore){
-            console.log("win")
-        }
-
-    });
-
-    Lower.addEventListener("click", function(){
-        const dicetre = Math.floor((Math.random() * 6) + 1);
-        const dicefore = Math.floor((Math.random() * 6) + 1);
+         Lower.addEventListener("click", function(){
+        let dicetre = Math.floor((Math.random() * 6) + 1);
+        let dicefore = Math.floor((Math.random() * 6) + 1);
 
         console.log(dicetre + ' ' + dicefore);
 
         dice3.src = "./img/dice-" + dicetre + ".png";
         dice4.src = "./img/dice-" + dicefore + ".png";
+
+        if (diceOne + diceTwo > dicetre +  dicefore){
+            console.log("win")
+        }
+        else if (diceOne + diceTwo < dicetre +  dicefore){
+            console.log("lose")
+        }
     });
+    });
+
+
+    
+
+   
 
     const showPopupButton = document.querySelector('.showPopup');
     const popup = document.querySelector('.popup');
