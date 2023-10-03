@@ -57,7 +57,7 @@ transform: translate(-370%, 100%);
     
 }
 
-#higher {
+.higher {
     width: 100px;
     height: 100px;
     border-radius: 20px;
@@ -67,7 +67,7 @@ transform: translate(-370%, 100%);
     transform: translate(900%, -100%);
 }
 
-#roll {
+.roll {
     width: 100px;
     height: 100px;
     border-radius: 20px;
@@ -77,7 +77,7 @@ transform: translate(-370%, 100%);
     transform: translate(950%, -50%);
 }
 
-#lower {
+.lower {
     width: 100px;
     height: 100px;
     border-radius: 20px;
