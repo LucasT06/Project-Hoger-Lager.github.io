@@ -29,33 +29,34 @@ h1 {
     padding: 20px;
     text-align: center;
 }
-
-.comp {
-    transform: translate(110%, -950%);
-}
-.vs {
-    transform: translate(600%, -950%);
-    
-}
-
-.jij {
-    transform: translate(930%, -950%);
-}
-
-.button {
-transform: translate(-370%, 100%);
-}
-
-#showPopup {
-    transform: translate(270%, 320%);
+.showPopup {
+    transform: translate(730%, 350%);
     width: 100px;
     height: 100px;
     border-radius: 20px;
     border-color: red;
     background-color: black;
-    color: white;
+    color: white;   
+}
+
+
+.comp {
+    transform: translate(110%, -950%);
+}
+.vs {
+    transform: translate(1200%, -950%);
     
 }
+
+.jij {
+    transform: translate(2250%, -950%);
+}
+
+.button {
+transform: translate(-430%, 100%);
+}
+
+
 
 .higher {
     width: 100px;
@@ -94,9 +95,17 @@ transform: translate(-370%, 100%);
 }
 
 .dice1-container {
-    transform: translate(-80%, -140%);
+    transform: translate(-40%, -140%);
 }
 
 .dice2-container {
     transform: translate(100%, -140%);
+}
+
+.leaderbord {
+    transform: translate(-490%, 300%);
+}
+
+.winlose { 
+    transform: translate(-890%, -800%);
 }
