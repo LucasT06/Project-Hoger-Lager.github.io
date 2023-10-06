@@ -8,11 +8,16 @@
     const higher = document.querySelector('.higher')
     const lower = document.querySelector('.lower')
     const roll = document.querySelector('.roll')
+    const yourpoint = document.querySelector('.yourpoint')
+    const computerpoint = document.querySelector('.computerpoint')
 
     let diceOne
     let diceTwo
     let dicetre
     let dicefore
+
+    let pointyour = 0;
+    let pointcomputer = 0;
 
 
     roll.addEventListener ('click', function(){
@@ -42,13 +47,23 @@
         dice4.src = "./img/dice-" + dicefore + ".png";
 
         if (diceOne + diceTwo < dicetre + dicefore){
-            console.log("win")
+            console.log("win");
+            pointyour++;
+            yourpoint.innerHTML = pointyour;
+            console.log('jouw points ' + pointyour);
+            console.log('computer poins ' + pointcomputer);
         }
         else if (diceOne + diceTwo > dicetre + dicefore){
-            console.log("lose")
+            console.log("lose");
+            pointcomputer++;
+            computerpoint.innerHTML = pointcomputer;
+            console.log('jouw points ' + pointyour);
+            console.log('computer poins ' + pointcomputer);
         }
         else if (diceOne + diceTwo === dicetre + dicefore){
             console.log('draw')
+            console.log('jouw points ' + pointyour);
+            console.log('computer poins ' + pointcomputer);
         }
 
         roll.disabled = false;
@@ -59,7 +74,7 @@
 
     lower.addEventListener("click", function(){
         dicetre = Math.floor((Math.random() * 6) + 1);
-        ldicefore = Math.floor((Math.random() * 6) + 1);
+        dicefore = Math.floor((Math.random() * 6) + 1);
 
         console.log(dicetre + ' ' + dicefore);
 
@@ -68,12 +83,24 @@
 
         if (diceOne + diceTwo > dicetre + dicefore){
             console.log("win")
+            pointyour++
+            yourpoint.innerHTML = pointyour;
+            console.log('jouw points ' + pointyour);
+            console.log('computer poins ' + pointcomputer);
         }
         else if (diceOne + diceTwo < dicetre + dicefore){
             console.log("lose")
+            pointcomputer++
+            computerpoint.innerHTML = pointcomputer
+            console.log('jouw points ' + pointyour);
+            console.log('computer poins ' + pointcomputer);
         }
         else if (diceOne + diceTwo === dicetre + dicefore){
-            console.log('draw')}
+            console.log('draw');
+            console.log('jouw points ' + pointyour);
+            console.log('computer poins ' + pointcomputer);
+        }
+            
 
         roll.disabled = false;
         higher.disabled = true;
