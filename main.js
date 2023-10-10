@@ -109,7 +109,7 @@ higher.addEventListener('click', function () {
         alert("Je hebt gewonnen")
         pointcomputer = 0
         computerpoint.innerHTML = pointcomputer
-        pointyour = 0
+          pointyour = 0
         yourpoint.innerHTML = pointyour
     }
 
