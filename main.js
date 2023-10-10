@@ -1,5 +1,5 @@
 
-console.log("index.html werkt");
+    console.log("index.html werkt");
 
 const dice1 = document.querySelector('.dice1-img')
 const dice2 = document.querySelector('.dice2-img')
@@ -65,6 +65,9 @@ Lower.addEventListener("click", function(){
       
    
 
+    showPopupButton.addEventListener('click', () => {
+        popup.style.display = 'block';
+    });
 
     dice3.src = "./img/dice-" + dicetre + ".png";
     dice4.src = "./img/dice-" + dicefore + ".png";
