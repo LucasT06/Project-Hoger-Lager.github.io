@@ -66,6 +66,23 @@ higher.addEventListener('click', function () {
         console.log('jouw points ' + pointyour);
         console.log('computer poins ' + pointcomputer);
     }
+    if (pointyour == 10) {
+        console.log("Je hebt gewonnen")
+        alert("Je hebt gewonnen")
+        pointcomputer = 0
+        computerpoint.innerHTML = pointcomputer
+        pointyour = 0
+        yourpoint.innerHTML = pointyour
+    }
+
+    if (pointcomputer == 10) {
+        console.log("Computer heeft gewonnen")
+        alert("Computer heeft gewonnnen")
+        pointcomputer = 0
+        computerpoint.innerHTML = pointcomputer
+        pointyour = 0
+        yourpoint.innerHTML = pointyour
+    }
 
     roll.disabled = false;
     higher.disabled = true;
