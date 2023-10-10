@@ -59,7 +59,7 @@
 
     lower.addEventListener("click", function(){
         dicetre = Math.floor((Math.random() * 6) + 1);
-        ldicefore = Math.floor((Math.random() * 6) + 1);
+        dicefore = Math.floor((Math.random() * 6) + 1);
 
         console.log(dicetre + ' ' + dicefore);
 
