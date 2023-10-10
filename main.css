@@ -1,3 +1,4 @@
+
 /* Algemene stijl voor het hele document */
 body {
     background-image: url('img/ae47d53a-535e-4f51-b847-38c5de0574a4.jpg');
@@ -109,3 +110,4 @@ transform: translate(-430%, 100%);
 .winlose { 
     transform: translate(-890%, -800%);
 }
+
