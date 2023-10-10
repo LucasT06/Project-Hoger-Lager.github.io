@@ -1,4 +1,3 @@
-
 console.log("index.html werkt");
 
 const dice1 = document.querySelector('.dice1-img')
@@ -47,44 +46,6 @@ higher.addEventListener('click', function () {
     dice3.src = "./img/dice-" + dicetre + ".png";
     dice4.src = "./img/dice-" + dicefore + ".png";
 
-
-        if (diceOne + diceTwo < dicetre + dicefore){
-            console.log("win")
-        }
-        else if (diceOne + diceTwo > dicetre + dicefore){
-            console.log("lose")
-        }
-        else if (diceOne + diceTwo === dicetre + dicefore){
-            console.log('draw')
-        }
-
-        roll.disabled = false;
-        higher.disabled = true;
-        lower.disabled = true;
-
-    });
-    lower.addEventListener("click", function(){
-        dicetre = Math.floor((Math.random() * 6) + 1);
-        dicefore = Math.floor((Math.random() * 6) + 1);
-
-        console.log(dicetre + ' ' + dicefore);
-
-        dice3.src = "./img/dice-" + dicetre + ".png";
-        dice4.src = "./img/dice-" + dicefore + ".png";
-
-        if (diceOne + diceTwo > dicetre + dicefore){
-            console.log("win")
-        }
-        else if (diceOne + diceTwo < dicetre + dicefore){
-            console.log("lose")
-        }
-        else if (diceOne + diceTwo === dicetre + dicefore){
-            console.log('draw')}
-
-        roll.disabled = false;
-        higher.disabled = true;
-        lower.disabled = true;
-    });
     if (diceOne + diceTwo < dicetre + dicefore) {
         console.log("win");
         pointyour++;
@@ -109,7 +70,7 @@ higher.addEventListener('click', function () {
         alert("Je hebt gewonnen")
         pointcomputer = 0
         computerpoint.innerHTML = pointcomputer
-          pointyour = 0
+        pointyour = 0
         yourpoint.innerHTML = pointyour
     }
 
@@ -122,11 +83,11 @@ higher.addEventListener('click', function () {
         yourpoint.innerHTML = pointyour
     }
 
-
     roll.disabled = false;
     higher.disabled = true;
     lower.disabled = true;
 
+});
 
 lower.addEventListener("click", function () {
     dicetre = Math.floor((Math.random() * 6) + 1);
@@ -198,4 +159,3 @@ showPopupButton.addEventListener('click', () => {
 closePopupButton.addEventListener('click', () => {
     popup.style.display = 'none';
 });
-
