@@ -47,7 +47,7 @@ higher.addEventListener('click', function () {
     dice3.src = "./img/dice-" + dicetre + ".png";
     dice4.src = "./img/dice-" + dicefore + ".png";
 
-<<<<<<< HEAD
+
         if (diceOne + diceTwo < dicetre + dicefore){
             console.log("win")
         }
@@ -63,7 +63,6 @@ higher.addEventListener('click', function () {
         lower.disabled = true;
 
     });
-
     lower.addEventListener("click", function(){
         dicetre = Math.floor((Math.random() * 6) + 1);
         dicefore = Math.floor((Math.random() * 6) + 1);
@@ -86,7 +85,6 @@ higher.addEventListener('click', function () {
         higher.disabled = true;
         lower.disabled = true;
     });
-=======
     if (diceOne + diceTwo < dicetre + dicefore) {
         console.log("win");
         pointyour++;
@@ -106,13 +104,12 @@ higher.addEventListener('click', function () {
         console.log('jouw points ' + pointyour);
         console.log('computer poins ' + pointcomputer);
     }
->>>>>>> 671c1816cbacfbe6c7a0ac2ddd078481d0128a72
+
 
     roll.disabled = false;
     higher.disabled = true;
     lower.disabled = true;
 
-});
 
 lower.addEventListener("click", function () {
     dicetre = Math.floor((Math.random() * 6) + 1);
