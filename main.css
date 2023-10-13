@@ -110,4 +110,6 @@ transform: translate(-430%, 100%);
 .winlose { 
     transform: translate(-890%, -800%);
 }
-
+button:hover{
+    color: red;
+}
