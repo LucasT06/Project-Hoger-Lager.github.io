@@ -135,7 +135,7 @@ lower.addEventListener("click", function () {
         pointyour = 0
         yourpoint.innerHTML = pointyour
     }
-    
+
     roll.disabled = false;
     higher.disabled = true;
     lower.disabled = true;
