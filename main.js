@@ -48,40 +48,41 @@ higher.addEventListener('click', function () {
 
     // als jij wint.
     if (diceOne + diceTwo < dicetre + dicefore) {
-        // jouw punten op tellen voor jouw.
-        alert ("Ronde gewonnen");
         pointyour++;
         yourpoint.innerHTML = pointyour;
+            // jouw punten op tellen voor jouw.
+            alert ("Ronde gewonnen");
         // als de computer wint.
     } else if (diceOne + diceTwo > dicetre + dicefore) {
-        // punten op tellen van computer.
-        alert ("Ronde verloren");
         pointcomputer++;
         computerpoint.innerHTML = pointcomputer;
+            // punten op tellen van computer.
+        alert ("Ronde verloren");
     // als het gelijk spel is.
     } else if (diceOne + diceTwo === dicetre + dicefore) {
         alert ('het is gelijkspel');
     };
     // als jij 10 punten heb gehaald.
     if (pointyour == 10) {
-        // laten zien dat jij heb gewonnen.
-        alert("Je hebt gewonnen");
+       
         // reset punten naar 0.
         pointcomputer = 0;
         computerpoint.innerHTML = pointcomputer;
         pointyour = 0;
         yourpoint.innerHTML = pointyour;
+         // laten zien dat jij heb gewonnen.
+        alert("Je hebt gewonnen");
     };
 
     // als de computer 10 punten heeft.
     if (pointcomputer == 10) {
-        // laten zien dat de computer heeft gewonnen.
-        alert("Computer heeft gewonnnen");
         // reseten punten naar 0.
         pointcomputer = 0;
         computerpoint.innerHTML = pointcomputer;
         pointyour = 0;
         yourpoint.innerHTML = pointyour;
+           // laten zien dat de computer heeft gewonnen.
+           alert("Computer heeft gewonnnen");
     };
 
     // de buttons aan zetten die je moet gebruiken en uit zetten die je niet nodig heb.
@@ -103,16 +104,16 @@ lower.addEventListener("click", function () {
 
     // als jij wint.
     if (diceOne + diceTwo > dicetre + dicefore) {
-        // jouw punten op tellen voor jouw.
-        alert ("Ronde verloren");
         pointyour++;
         yourpoint.innerHTML = pointyour;
+            // jouw punten op tellen voor jouw.
+            alert ("Ronde verloren");
     // als computer wint.
     } else if (diceOne + diceTwo < dicetre + dicefore) {
-        // punten op tellen van computer.
-        alert ("Ronde verloren");
         pointcomputer++;
         computerpoint.innerHTML = pointcomputer;
+            // punten op tellen van computer.
+            alert ("Ronde verloren");
     // als het gelijk spel is.
     } else if (diceOne + diceTwo === dicetre + dicefore) {
         alert ('het is gelijkspel');
@@ -120,24 +121,24 @@ lower.addEventListener("click", function () {
 
     // als jij 10 punten heb gehaald.
     if (pointyour == 10) {
-        // laten zien dat jij heb gewonnen.
-        alert("Je hebt gewonnen");
         // reseten punten naar 0.
         pointcomputer = 0;
         computerpoint.innerHTML = pointcomputer;
         pointyour = 0;
         yourpoint.innerHTML = pointyour;
+        // laten zien dat jij heb gewonnen.
+        alert("Je hebt gewonnen");
     };
 
     // als de computer 10 punten heb gehaald.
     if (pointcomputer == 10) {
-        // laten zien dat computer heeft gewonnen.
-        alert("Computer heeft gewonnnen");
         // reseten punten naar 0.
         pointcomputer = 0;
         computerpoint.innerHTML = pointcomputer;
         pointyour = 0;
         yourpoint.innerHTML = pointyour;
+        // laten zien dat computer heeft gewonnen.
+        alert("Computer heeft gewonnnen");
     }
 
     // de buttons aan zetten die je nodig heb en uit zetten die je niet nodig heb.
@@ -149,6 +150,10 @@ lower.addEventListener("click", function () {
 // de buttons aan zetten die je nodig heb
 higher.disabled = true;
 lower.disabled = true;
+
+
+// deze code laat de spel regels niet zien als je het spel open.
+popup.style.display = 'none'
 
 // de informatie popup laten zien
 showPopupButton.addEventListener('click', () => {
